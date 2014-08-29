@@ -3,19 +3,14 @@ div {
   padding-top: 20px;
 }
 
-a.tab-button, a.add-tab-button{
-  margin: 5px 10px;
-  padding: 5px;
-  border: 1px solid black;
+li.tab-button, li.add-tab-button{
   cursor: hand;
-}
-
-li {
   float: left;
+  padding: 10px 15px;
+  border-bottom: 1px solid black;
 }
 
-a.active.tab-button {
-  color: #FFF;
-  background-color: blue;
-  border: none;
+li.active {
+  border: 1px solid black;
+  border-bottom: none;
 }

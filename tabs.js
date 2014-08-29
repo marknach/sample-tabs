@@ -8,15 +8,15 @@ $(document).ready(function() {
   $('.add-tab-button').click(function() {
     $('.tab-button').removeClass('active');
     $('.content').hide();
-    var newTab = $("<li><a class='tab-button active'>New Tab</a></li>");
+    var newTab = $("<li class='tab-button active'>New Tab</li>");
     var newContent = $("<div class='content'>New Tab content</div>");
     $('.content-container').append(newContent);
+    $(this).before($(newTab));
     newTab.click(function() {
       $('.tab-button').removeClass('active');
       $('.content').hide();
       newContent.show();
-      newTab.find("a").addClass("active");
+      newTab.addClass("active");
     });
-    $(this).parent().before($(newTab));
   });
 });
