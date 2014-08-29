@@ -1,8 +1,20 @@
 div {
-  padding: 5px;
+  margin: 10px;
+  padding-top: 20px;
 }
 
-button.active {
+span.tab-button {
+  margin: 5px 10px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+span.active.tab-button {
   color: #FFF;
   background-color: blue;
+  border: none;
+}
+
+span:hover {
+  cursor: hand;
 }
