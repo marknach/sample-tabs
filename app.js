@@ -5,4 +5,7 @@ $(document).ready(function() {
     $('.content').hide();
     $('#' + $(this).data('tab')).show();
   });
+  $('.add-tab-button').click(function() {
+    $(this).before($("<span class='tab-button'></span>"));
+  });
 });
