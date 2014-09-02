@@ -12,11 +12,15 @@ $(document).ready(function() {
     var newContent = $("<div class='content'>New Tab content</div>");
     $('.content-container').append(newContent);
     $(this).before($(newTab));
-    newTab.click(function() {
-      $('.tab-button').removeClass('active');
-      $('.content').hide();
-      newContent.show();
-      newTab.addClass("active");
-    });
+    addHandler(newTab, newContent);
   });
 });
+
+function addHandler(newTab, newContent){
+  newTab.click(function() {
+    $('.tab-button').removeClass('active');
+    $('.content').hide();
+    newContent.show();
+    newTab.addClass("active");
+  });
+}
